@@ -4,7 +4,7 @@ const config = {
     width: 1000,
     parent: "eat-that-color",
     title: "Eat the color",
-    scene: [LoadingScreen, Game],
+    scene: [LoadingScreen, Game, FinalScore],
     physics: {
         default: "arcade",
         arcade: {

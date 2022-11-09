@@ -1,15 +1,12 @@
 class Ball extends Phaser.GameObjects.Sprite {
-    constructor(scene) {
-        let placement = [1.2, 2, 4, 7];
-        let _rand = Math.floor(Math.random() * 4);
-        let _x = placement[_rand];
-        let isGreenBall = Math.random() < 0.8;
+    constructor(scene, xCoordinate, isGreenBall) {
+        // let placement = [-100, -250, -400];
 
         var y = -20;
         super(
             scene,
             // config.width / ballData.xCoordinate,
-            config.width / _x,
+            config.width / 2 + xCoordinate,
             y,
             isGreenBall ? "greenball" : "redball"
         );

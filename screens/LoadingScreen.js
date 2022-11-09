@@ -29,6 +29,7 @@ class LoadingScreen extends Phaser.Scene {
         this.load.image("player_img", "assets/images/player.png");
         this.load.image("greenball", "assets/images/eatball.png");
         this.load.image("redball", "assets/images/dangerball.png");
+        this.load.image("barrior", "assets/images/barrior.png");
 
         //Load audios
         this.load.audio("theme_audio", "assets/audio/bg.mp3");
